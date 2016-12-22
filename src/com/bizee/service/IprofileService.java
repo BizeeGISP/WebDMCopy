@@ -12,6 +12,7 @@ public interface IprofileService
 	public List<Profile> profileList();
     public Profile getProfile(int Id);
 	public void deleteProfile(Profile profile);
+	
 
 	
 	
