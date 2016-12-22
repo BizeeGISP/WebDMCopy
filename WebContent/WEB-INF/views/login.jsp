@@ -11,12 +11,17 @@
 </head>
 <body>
 
-<form>
-  <h1>Employee Log in</h1>
+<form method="POST" action="/webdm/loginsuccess.html">
+  <h1> Log in</h1>
   <div class="inset">
+  
   <p>
-    <label for="email">EMAIL ADDRESS</label>
-    <input type="text" name="email" id="email">
+    <label for="id">ID</label>
+    <input type="hidden" name="id" id="id">
+  </p>
+  <p>
+    <label for="username">USER NAME</label>
+    <input type="text" name="username" id="username">
   </p>
   <p>
     <label for="password">PASSWORD</label>
@@ -29,7 +34,7 @@
   </div>
   <p class="p-container">
     <span><a href="javascript:void(0)" src="">Forgot password?</a></span>
-    <input type="submit" name="login" id="login" value="Log in">
+    <input type="submit" name="login" id="login" value="log in">
   </p>
 </form>
 

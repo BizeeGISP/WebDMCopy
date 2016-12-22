@@ -1,8 +1,6 @@
 package com.bizee.constants;
 
 import org.springframework.context.annotation.Configuration;
-import org.springframework.beans.factory.annotation.Autowired;
-
 
 
 @Configuration

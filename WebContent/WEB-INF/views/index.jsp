@@ -7,7 +7,13 @@
 <title>Insert title here</title>
 </head>
 <body>
- <h2>Successfully registered</h2>
- <a href="login.jsp">Login Page</a> 
+<form method="POST" >
+<div>Role Home Page</div>
+
+	<ul>
+		<li><a href="role">List of Roles</a></li>
+		<li><a href="add">Add Role</a></li>
+	</ul>
+</form>
 </body>
 </html>
