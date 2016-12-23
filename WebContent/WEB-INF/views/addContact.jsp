@@ -10,7 +10,7 @@
 </head>
 <body>
 <h2>Add Contact Data</h2>
-	<form:form method="POST" action="/webdm/save.html">
+	<form:form method="POST" action="/webdm/savecontact.html">
 		<table>
 			<tr>
 				<td><form:label path="id">Contact ID:</form:label></td>
@@ -51,8 +51,8 @@
 					<td><c:out value="${contact.username}" /></td>
 					<td><c:out value="${contact.password}" /></td>
 					<td><c:out value="${contact.name}" /></td>
-					<td align="center"><a href="edit.html?id=${contact.id}">Edit</a>
-						| <a href="delete.html?id=${contact.id}">Delete</a></td>
+					<td align="center"><a href="editcontact.html?id=${contact.id}">Edit</a>
+						| <a href="deletecontact.html?id=${contact.id}">Delete</a></td>
 				</tr>
 			</c:forEach>
 		</table>

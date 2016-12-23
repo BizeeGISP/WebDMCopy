@@ -10,7 +10,7 @@
 <body>
 	<h1>Profile List</h1>
 	<h3>
-		<a href="add.html">Add More profiles</a>
+		<a href="addprofile1.html">Add More profiles</a>
 	</h3>
 
 	<c:if test="${!empty profiles}">

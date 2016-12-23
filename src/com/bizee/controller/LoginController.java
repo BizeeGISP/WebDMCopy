@@ -13,20 +13,14 @@ import org.springframework.web.servlet.ModelAndView;
 import com.bizee.bean.ContactBean;
 import com.bizee.model.Contact;
 import com.bizee.service.ContactService;
-import com.bizee.service.RoleService;
 
 @Controller
-@RequestMapping(value="/login")
 public class LoginController {
 
 	@Autowired
-	private RoleService roleService;
 	private ContactService contactService;
 
-	@RequestMapping(value = "/index", method = RequestMethod.GET)
-	public ModelAndView welcome1() {
-		return new ModelAndView("index");
-	}
+	
 
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public ModelAndView welcome() {
@@ -51,11 +45,11 @@ public class LoginController {
 		}
 		if(isValid)			
 		{
-			return new ModelAndView("redirect:/contactIndex");			
+			return new ModelAndView("redirect:/contactindex.html");			
 		}
 		else
 		{
-			return new ModelAndView("redirect:/login");
+			return new ModelAndView("redirect:/login.html");
 		}
 
 	}

@@ -10,7 +10,7 @@
 </head>
 <body>
 <h2>Add Role Data</h2>
-	<form:form method="POST" action="/webdm/save.html">
+	<form:form method="POST" action="/webdm/saverole.html">
 		<table>
 			<tr>
 				<td><form:label path="roleid">Role ID:</form:label></td>
@@ -38,8 +38,8 @@
 				<tr>
 					<td><c:out value="${role.roleid}" /></td>
 					<td><c:out value="${role.rolename}" /></td>
-					<td align="center"><a href="edit.html?roleid=${role.roleid}">Edit</a>
-						| <a href="delete.html?roleid=${role.roleid}">Delete</a></td>
+					<td align="center"><a href="editrole.html?roleid=${role.roleid}">Edit</a>
+						| <a href="deleterole.html?roleid=${role.roleid}">Delete</a></td>
 				</tr>
 			</c:forEach>
 		</table>

@@ -11,23 +11,23 @@ import javax.persistence.Table;
 
 
 @Entity
-@Table(name="Contact")
+@Table(name="contact")
 public class Contact implements Serializable {
  
 	private static final long serialVersionUID = -723583058586873479L;
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
-	@Column(name = "Id")
+	@Column(name = "id")
 	private Integer id;
 	
-	@Column(name="Username")
+	@Column(name="username")
 	private String userName;
 	
-	@Column(name="Password")
+	@Column(name="password")
 	private String password;
 	
-	@Column(name="Name")
+	@Column(name="name")
 	private String name;
 
 	public Integer getId() {

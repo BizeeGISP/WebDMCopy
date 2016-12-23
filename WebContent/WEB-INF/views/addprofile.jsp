@@ -10,7 +10,7 @@
 </head>
 <body>
 	<h2>Add profile Data</h2>
-	<form:form method="POST" action="/webdm/save.html">
+	<form:form method="POST" action="/webdm/saveprofile.html">
 		<table>
 			<tr>
 				<td><form:label path="id"> ID:</form:label></td>
@@ -41,8 +41,8 @@
 					<td><c:out value="${profile.id}" /></td>
 					<td><c:out value="${profile.name}" /></td>
 					
-					<td align="center"><a href="edit.html?id=${profile.id}">Edit</a>
-						| <a href="delete.html?id=${profile.id}">Delete</a></td>
+					<td align="center"><a href="editprofile.html?id=${profile.id}">Edit</a>
+						| <a href="deleteprofile.html?id=${profile.id}">Delete</a></td>
 				</tr>
 			</c:forEach>
 		</table>

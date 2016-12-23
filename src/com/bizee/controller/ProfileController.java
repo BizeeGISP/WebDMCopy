@@ -26,13 +26,13 @@ public class ProfileController {
 		// TODO Auto-generated constructor stub
 	}
 
-	@RequestMapping(value = "/profile", method = RequestMethod.GET)
+	@RequestMapping(value = "/profileindex", method = RequestMethod.GET)
 	public ModelAndView welcome() {
-		return new ModelAndView("profile");
+		return new ModelAndView("profileindex");
 
 	}
 
-	@RequestMapping(value = "/save", method = RequestMethod.POST)
+	@RequestMapping(value = "/saveprofile", method = RequestMethod.POST)
 	public ModelAndView saveProfile(
 			@ModelAttribute("command") ProfileBean profileBean,
 			BindingResult result) {
@@ -40,7 +40,7 @@ public class ProfileController {
 		Profile profile = prepareModel(profileBean);
 
 		iProfileService.addProfile(profile);
-		return new ModelAndView("redirect:/add.html");
+		return new ModelAndView("redirect:/addprofile1.html");
 	}
 
 	@RequestMapping(value = "/profiles1", method = RequestMethod.GET)
@@ -50,7 +50,7 @@ public class ProfileController {
 		return new ModelAndView("profileList", model);
 	}
 
-	@RequestMapping(value = "/add", method = RequestMethod.GET)
+	@RequestMapping(value = "/addprofile1", method = RequestMethod.GET)
 	public ModelAndView addProfile(
 			@ModelAttribute("command") ProfileBean profileBean,
 			BindingResult result) {
@@ -59,7 +59,7 @@ public class ProfileController {
 		return new ModelAndView("addprofile", model);
 	}
 
-	@RequestMapping(value = "/delete", method = RequestMethod.GET)
+	@RequestMapping(value = "/deleteprofile", method = RequestMethod.GET)
 	public ModelAndView editStudent(
 			@ModelAttribute("command") ProfileBean profileBean,
 			BindingResult result) {
@@ -71,7 +71,7 @@ public class ProfileController {
 		return new ModelAndView("addprofile", model);
 	}
 
-	@RequestMapping(value = "/edit", method = RequestMethod.GET)
+	@RequestMapping(value = "/editprofile", method = RequestMethod.GET)
 	public ModelAndView editProfile(
 			@ModelAttribute("command") ProfileBean profileBean,
 			BindingResult result) {

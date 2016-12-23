@@ -1,4 +1,4 @@
-/*package com.bizee.controller;
+package com.bizee.controller;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -27,13 +27,13 @@ public class ContactController {
 		// TODO Auto-generated constructor stub
 	}
 
-	@RequestMapping(value = "/save", method = RequestMethod.POST)
+	@RequestMapping(value = "/savecontact", method = RequestMethod.POST)
 	public ModelAndView saveContact(
 			@ModelAttribute("command") ContactBean contactBean,
 			BindingResult result) {
 		Contact contact = prepareModel(contactBean);
 		contactService.addContact(contact);
-		return new ModelAndView("redirect:/add");
+		return new ModelAndView("redirect:/addcontact1.html");
 	}
 
 	@RequestMapping(value = "/contact", method = RequestMethod.GET)
@@ -43,7 +43,7 @@ public class ContactController {
 		return new ModelAndView("contactList", model);
 	}
 
-	@RequestMapping(value = "/add", method = RequestMethod.GET)
+	@RequestMapping(value = "/addcontact1", method = RequestMethod.GET)
 	public ModelAndView addContact(
 			@ModelAttribute("command") ContactBean contactBean,
 			BindingResult result) {
@@ -52,12 +52,12 @@ public class ContactController {
 		return new ModelAndView("addContact", model);
 	}
 
-	@RequestMapping(value = "/contactIndex", method = RequestMethod.GET)
+	@RequestMapping(value = "/contactindex", method = RequestMethod.GET)
 	public ModelAndView welcome() {
-		return new ModelAndView("contactIndex");
+		return new ModelAndView("contactindex");
 	}
 
-	@RequestMapping(value = "/delete", method = RequestMethod.GET)
+	@RequestMapping(value = "/deletecontact", method = RequestMethod.GET)
 	public ModelAndView editContact(
 			@ModelAttribute("command") ContactBean contactBean,
 			BindingResult result) {
@@ -68,7 +68,7 @@ public class ContactController {
 		return new ModelAndView("addContact", model);
 	}
 
-	@RequestMapping(value = "/edit", method = RequestMethod.GET)
+	@RequestMapping(value = "/editcontact", method = RequestMethod.GET)
 	public ModelAndView deleteContact(
 			@ModelAttribute("command") ContactBean contactBean,
 			BindingResult result) {
@@ -117,4 +117,3 @@ public class ContactController {
 		return bean;
 	}
 }
-*/

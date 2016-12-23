@@ -13,7 +13,7 @@ public class FormController {
 		// TODO Auto-generated constructor stub
 	}
 	
-	@RequestMapping(value = "/url.html", method = RequestMethod.GET)
+	@RequestMapping(value = "/url", method = RequestMethod.GET)
 	public ModelAndView welcome() {
 		return new ModelAndView("redirect:/form1");
 	}

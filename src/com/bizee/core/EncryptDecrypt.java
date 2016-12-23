@@ -93,14 +93,14 @@ public class EncryptDecrypt {
 
 
 
-/*
-	    public static void main(String args []) throws Exception
+
+	  /*  public static void main(String args []) throws Exception
 	    {
 	    	EncryptDecrypt td= new EncryptDecrypt();
-            String a1="jdbc:mysql://localhost:3306/GISP";
+            String a1="jdbc:mysql://192.168.30.45:3306/GISP";
 	        String target="System";
 	        String target1="B!z33$#12";
-            String target="root";
+            String target="bizee";
             String target1="mysql@bizEE";
 	        String e1=td.encrypt(BizeeConstant.USER_NAME);
 	        String d1=td.decrypt(e1);
@@ -130,8 +130,8 @@ public class EncryptDecrypt {
 	        System.out.println("Encryptedpwd String:" +   e3);
 	        System.out.println("Decryptedpwd String:" +   d3);
 	    }
-*/
-	
+
+	*/
 	
 }
 

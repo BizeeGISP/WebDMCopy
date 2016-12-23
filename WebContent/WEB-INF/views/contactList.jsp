@@ -10,7 +10,7 @@
 <body>
 <h1>List Contacts</h1>
 	<h3>
-		<a href="add.html">Add More Contact</a>
+		<a href="addcontact1.html">Add More Contact</a>
 	</h3>
 
 	<c:if test="${!empty contacts}">

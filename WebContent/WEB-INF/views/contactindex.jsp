@@ -8,12 +8,13 @@
 </head>
 <body>
 <form method="POST" >
-<div>Role Home Page</div>
+<div>Contact Home Page</div>
 
 	<ul>
-		<li><a href="role">List of Roles</a></li>
-		<li><a href="add">Add Role</a></li>
+		<li><a href="contact.html">List of Contacts</a></li>
+		<li><a href="addcontact1.html">Add contact</a></li>
 	</ul>
 </form>
+
 </body>
 </html>

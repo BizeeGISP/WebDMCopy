@@ -1,4 +1,4 @@
-/*package com.bizee.controller;
+package com.bizee.controller;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -31,13 +31,13 @@ public class RoleController {
 	}
 	
 	
-	@RequestMapping(value = "/index", method = RequestMethod.GET)
+	@RequestMapping(value = "/roleindex", method = RequestMethod.GET)
 	public ModelAndView welcome() {
-		return new ModelAndView("index");
+		return new ModelAndView("roleindex");
 	}
 	
 	
-	@RequestMapping(value = "/save.html", method = RequestMethod.POST)
+	@RequestMapping(value = "/saverole", method = RequestMethod.POST)
 	public ModelAndView saveRole(@ModelAttribute("command") RoleBean roleBean,
 			BindingResult result) {
 		Role role = prepareModel(roleBean);
@@ -52,7 +52,7 @@ public class RoleController {
 		return new ModelAndView("roleList", model);
 	}
 
-	@RequestMapping(value = "/add", method = RequestMethod.GET)
+	@RequestMapping(value = "/addrole1.html", method = RequestMethod.GET)
 	public ModelAndView addRole(@ModelAttribute("command") RoleBean roleBean,
 			BindingResult result) {
 		Map<String, Object> model = new HashMap<String, Object>();
@@ -60,7 +60,7 @@ public class RoleController {
 		return new ModelAndView("addRole", model);
 	}
 
-	@RequestMapping(value = "/delete", method = RequestMethod.GET)
+	@RequestMapping(value = "/deleterole", method = RequestMethod.GET)
 	public ModelAndView editRole(@ModelAttribute("command") RoleBean roleBean,
 			BindingResult result) {
 		roleService.deleteRole(prepareModel(roleBean));
@@ -70,7 +70,7 @@ public class RoleController {
 		return new ModelAndView("addRole", model);
 	}
 
-	@RequestMapping(value = "/edit", method = RequestMethod.GET)
+	@RequestMapping(value = "/editrole", method = RequestMethod.GET)
 	public ModelAndView deleteRole(
 			@ModelAttribute("command") RoleBean roleBean, BindingResult result) {
 		Map<String, Object> model = new HashMap<String, Object>();
@@ -115,4 +115,3 @@ public class RoleController {
 	
 
 }
-*/
