@@ -31,7 +31,7 @@
 	</context-param>
  -->
 	<welcome-file-list>
-		<welcome-file>form1.html</welcome-file>
+	<welcome-file>login.html</welcome-file>
 	</welcome-file-list>
 </web-app>
 

@@ -1,4 +1,4 @@
-/*package com.bizee.controller;
+package com.bizee.controller;
 
 
 
@@ -18,8 +18,6 @@ import com.bizee.service.RoleService;
 @Controller
 @RequestMapping(value="/login")
 public class LoginController {
-
-	 *//** public void contextInitialise(){ new ServletContext(); } *//*
 
 	@Autowired
 	private RoleService roleService;
@@ -70,5 +68,3 @@ public class LoginController {
 	}
 
 }
-
-*/
