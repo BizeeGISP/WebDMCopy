@@ -42,7 +42,7 @@ public class RoleController {
 			BindingResult result) {
 		Role role = prepareModel(roleBean);
 		roleService.addRole(role);
-		return new ModelAndView("redirect:/addRole");
+		return new ModelAndView("redirect:/addrole1.html");
 	}
 
 	@RequestMapping(value = "/role", method = RequestMethod.GET)

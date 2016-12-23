@@ -31,6 +31,7 @@ public class ContactController {
 	public ModelAndView saveContact(
 			@ModelAttribute("command") ContactBean contactBean,
 			BindingResult result) {
+		System.out.println("enter");
 		Contact contact = prepareModel(contactBean);
 		contactService.addContact(contact);
 		return new ModelAndView("redirect:/addcontact1.html");
